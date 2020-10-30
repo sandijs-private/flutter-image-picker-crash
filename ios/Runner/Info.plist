@@ -43,6 +43,8 @@
 	<string>to be able to crash</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>to be able to crash</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>to be able to crash</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>

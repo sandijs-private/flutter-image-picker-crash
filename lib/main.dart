@@ -112,9 +112,13 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () async {
           _incrementCounter();
           final ImagePicker _imagePicker = ImagePicker();
-          final image = await _imagePicker.getImage(
-              source: ImageSource.gallery,
-              imageQuality: 90);
+          try {
+            final image = await _imagePicker.getImage(
+                source: ImageSource.gallery,
+                imageQuality: 90);
+          } catch (e) {
+            print(e);
+          }
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
